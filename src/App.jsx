@@ -1,7 +1,8 @@
 import './App.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosArrowDown } from 'react-icons/io';
-function App() {
+
+export default function App() {
   return (
     <>
       <div className="nav-wrapper">
@@ -70,5 +71,3 @@ function App() {
     </>
   );
 }
-
-export default App;
