@@ -1,17 +1,46 @@
 import './App.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
-
+import { IoIosArrowDown } from 'react-icons/io';
 function App() {
   return (
     <>
       <div className="nav-wrapper">
         <nav>
-          <img src="https://www.linkup.com/static/img/linkup-logo.svg" />
-          <GiHamburgerMenu size="1.8rem" />
+          <div className="nav-inner">
+            <img src="https://www.linkup.com/static/img/linkup-logo.svg" />
+            
+            <GiHamburgerMenu size="1.8rem" id="hamburgerIcon" />
+            <div className="right-nav">
+              <div>
+                <div>Products</div>
+                <IoIosArrowDown />
+              </div>
+              <div>
+                <div>Industry Solutions</div>
+                <IoIosArrowDown />
+              </div>
+              <div>
+                <div>Our Data</div>
+                <IoIosArrowDown />
+              </div>
+              <div>
+                <div>Insights</div>
+                <IoIosArrowDown />
+              </div>
+              <div>
+                <div>About Us</div>
+                <IoIosArrowDown />
+              </div>
+              <button id="requestDemoBtn">Request a Demo</button>
+            </div>
+          </div>
         </nav>
       </div>
       <div className="grid-container">
-          <div className="background">hello background</div>
+        <div className="background">
+          <div></div>
+          <div></div>
+        </div>
         <div className="main-wrapper">
           <main>
             <div className="main-text-wrapper">
